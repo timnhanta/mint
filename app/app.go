@@ -6,6 +6,9 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/TimNhanTa/mint/x/mint"
+	mintkeeper "github.com/TimNhanTa/mint/x/mint/keeper"
+	minttypes "github.com/TimNhanTa/mint/x/mint/types"
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	"github.com/cosmos/cosmos-sdk/client"
 	nodeservice "github.com/cosmos/cosmos-sdk/client/grpc/node"
@@ -61,9 +64,6 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/group"
 	groupkeeper "github.com/cosmos/cosmos-sdk/x/group/keeper"
 	groupmodule "github.com/cosmos/cosmos-sdk/x/group/module"
-	"github.com/cosmos/cosmos-sdk/x/mint"
-	mintkeeper "github.com/cosmos/cosmos-sdk/x/mint/keeper"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
 	"github.com/cosmos/cosmos-sdk/x/params"
 	paramsclient "github.com/cosmos/cosmos-sdk/x/params/client"
 	paramskeeper "github.com/cosmos/cosmos-sdk/x/params/keeper"
@@ -106,6 +106,7 @@ import (
 	custommintmodule "testmint/x/custommint"
 	custommintmodulekeeper "testmint/x/custommint/keeper"
 	custommintmoduletypes "testmint/x/custommint/types"
+
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 
 	appparams "testmint/app/params"
